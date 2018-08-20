@@ -1,2 +1,11 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<h1>Devise app</h1>
+
+<% if current_user %>
+  <p>
+    Welcome, <%= current_user.email %>
+  </p>
+<% else %>
+ <p>
+   Hit that sign-up button in the navbar!
+ </p>
+<% end %>
